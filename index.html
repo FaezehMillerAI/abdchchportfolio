@@ -37,10 +37,8 @@
 
         <!-- Bio Column -->
         <div class="hero-info">
-          <div class="hero-badges-row">
-            <span class="badge primary">دانشگاه رازی · Razi University</span>
-            <span class="badge cyan">دانش‌آموخته شریف · Sharif Alum</span>
-            <span class="badge emerald">دکتری ولونگونگ استرالیا · PhD Wollongong</span>
+          <div id="hero-badges-row" class="hero-badges-row">
+            <!-- Populated dynamically by app.js based on language -->
           </div>
 
           <h1 id="hero-title" class="hero-title">دکتر عبدالله چاله چاله</h1>
@@ -58,20 +56,8 @@
             <!-- Populated by JS -->
           </blockquote>
 
-          <div class="hero-buttons-row">
-            <a href="https://scholar.google.com/citations?user=C1-FBkUAAAAJ&hl=en" target="_blank" rel="noopener" class="action-pill primary" style="height:40px; padding:0 1.1rem;">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
-              <span>Google Scholar (1400+ Citations)</span>
-            </a>
-            <a href="publications.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
-              <span>📚 مشاهده مقالات</span>
-            </a>
-            <a href="theses.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
-              <span>🎓 پایان‌نامه‌ها</span>
-            </a>
-            <a href="contact.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
-              <span>✉️ تماس و ارتباط</span>
-            </a>
+          <div id="hero-buttons-row" class="hero-buttons-row">
+            <!-- Populated dynamically by app.js based on language -->
           </div>
         </div>
 
@@ -102,11 +88,11 @@
     <div class="container">
       <div class="section-head">
         <div class="section-head-text">
-          <span class="badge primary" style="margin-bottom:0.4rem;">Research Pillars</span>
-          <h3>محورهای اصلی پژوهش و تخصص</h3>
-          <p>تحقیقات پیشرو در حوزه‌های هوش مصنوعی، بینایی ماشین، پردازش تصویر پزشکی، سیستم‌های توزیع‌شده و زبان طبیعی.</p>
+          <span id="pillars-head-tag" class="badge primary" style="margin-bottom:0.4rem;">Research Pillars</span>
+          <h3 id="pillars-head-title">محورهای اصلی پژوهش و تخصص</h3>
+          <p id="pillars-head-desc">تحقیقات پیشرو در حوزه‌های هوش مصنوعی، بینایی ماشین، پردازش تصویر پزشکی، سیستم‌های توزیع‌شده و زبان طبیعی.</p>
         </div>
-        <a href="publications.html" class="explore-all-btn">
+        <a id="pillars-explore-btn" href="publications.html" class="explore-all-btn">
           <span>آرشیو کامل مقالات</span>
           <span>←</span>
         </a>
@@ -123,11 +109,11 @@
     <div class="container">
       <div class="section-head">
         <div class="section-head-text">
-          <span class="badge emerald" style="margin-bottom:0.4rem;">2024–2026 Latest</span>
-          <h3>دستاوردهای اخیر پژوهشی</h3>
-          <p>منتخبی از مقالات چاپ‌شده در نشریات برتر بین‌المللی رده Q1 در سال‌های اخیر.</p>
+          <span id="featured-head-tag" class="badge emerald" style="margin-bottom:0.4rem;">2024–2026 Latest</span>
+          <h3 id="featured-head-title">دستاوردهای اخیر پژوهشی</h3>
+          <p id="featured-head-desc">منتخبی از مقالات چاپ‌شده در نشریات برتر بین‌المللی رده Q1 در سال‌های اخیر.</p>
         </div>
-        <a href="publications.html" class="explore-all-btn">
+        <a id="featured-explore-btn" href="publications.html" class="explore-all-btn">
           <span>مشاهده تمامی ۱۰۰+ مقاله</span>
           <span>←</span>
         </a>

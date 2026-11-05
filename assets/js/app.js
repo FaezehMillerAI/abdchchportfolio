@@ -320,19 +320,19 @@
 
           <!-- Actions -->
           <div class="nav-actions">
-            <button class="action-pill" onclick="window.toggleLanguage()" title="${isFa ? 'Switch to English' : 'تغییر به فارسی'}">
+            <button class="action-pill" onclick="window.toggleLanguage()" title="${isFa ? 'تغییر به انگلیسی' : 'Switch to Persian'}">
               <span>🌐</span>
-              <span>${isFa ? 'English' : 'فارسی'}</span>
+              <span>${isFa ? 'English' : 'Persian'}</span>
             </button>
 
-            <button class="icon-btn-round" onclick="window.toggleTheme()" title="${state.theme === 'dark' ? 'Switch to Light Mode' : 'حالت شب'}">
+            <button class="icon-btn-round" onclick="window.toggleTheme()" title="${isFa ? (state.theme === 'dark' ? 'تغییر به حالت روشن' : 'تغییر به حالت شب') : (state.theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode')}">
               ${state.theme === 'dark'
                 ? `<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>`
                 : `<svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>`
               }
             </button>
 
-            <button class="action-pill primary" onclick="window.print()" title="Print CV / Save as PDF">
+            <button class="action-pill primary" onclick="window.print()" title="${isFa ? 'چاپ رزومه / دریافت فایل PDF' : 'Print CV / Save as PDF'}">
               <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
               </svg>
@@ -1187,7 +1187,8 @@
         icon: '🏛️',
         title_fa: '۱۵ سال ریاست مرکز کامپیوتر، اینترنت و فناوری اطلاعات دانشگاه رازی',
         title_en: '15 Years Head of Computing, Internet & IT Center (Razi University)',
-        period: '1999 – 2014 (1378 – 1393)',
+        period_fa: '۱۹۹۹ – ۲۰۱۴ (۱۳۷۸ – ۱۳۹۳)',
+        period_en: '1999 – 2014',
         years: 15,
         pct: 50,
         desc_fa: 'طراحی، اجرا و توسعه زیرساخت فیبر نوری پردیس، ۳ دیتاسنتر اختصاصی، کلاستر محاسبات سریع HPC، و اتوماسیون جامع دانشجویی.',
@@ -1198,7 +1199,8 @@
         icon: '🎓',
         title_fa: '۵ سال مدیریت گروه مهندسی کامپیوتر و فناوری اطلاعات',
         title_en: '5 Years Head of Computer Engineering Department',
-        period: '1996 – 2018 (1375 – 1397 متناوب)',
+        period_fa: '۱۹۹۶ – ۲۰۱۸ (۱۳۷۵ – ۱۳۹۷ متناوب)',
+        period_en: '1996 – 2018 (Intermittent)',
         years: 5,
         pct: 17,
         desc_fa: 'راه‌اندازی و توسعه مقاطع کارشناسی ارشد و دکتری هوش مصنوعی، جذب اعضای هیئت علمی نخبه و تجهیز آزمایشگاه‌های تخصصی.',
@@ -1209,7 +1211,8 @@
         icon: '🌏',
         title_fa: '۴ سال دوره دکتری و پژوهشگر بین‌المللی در دانشگاه ولونگونگ استرالیا',
         title_en: '4 Years Ph.D. Research Fellow (University of Wollongong, Australia)',
-        period: '2001 – 2005 (1380 – 1384)',
+        period_fa: '۲۰۰۱ – ۲۰۰۵ (۱۳۸۰ – ۱۳۸۴)',
+        period_en: '2001 – 2005',
         years: 4,
         pct: 14,
         desc_fa: 'اخذ بورسیه دولتی دکتری؛ ارائه الگوریتم‌های نوآورانه در بازیابی تصویر، افرازبندی زاویه‌ای و توصیف کانتورهای هندسی.',
@@ -1220,7 +1223,8 @@
         icon: '🔬',
         title_fa: '۳۰+ سال تدریس و عضویت مستمر هیئت علمی دانشگاه رازی',
         title_en: '30+ Years Continuous Academic Instruction & Research Faculty',
-        period: '1995 – Present (1374 – اکنون)',
+        period_fa: '۱۹۹۵ – اکنون (۱۳۷۴ – اکنون)',
+        period_en: '1995 – Present',
         years: 30,
         pct: 100,
         desc_fa: 'آموزش و پرورش هزاران مهندس و پژوهشگر ارشد و دکتری؛ هدایت بیش از ۸۵ پایان‌نامه و انتشار ۱۱۰+ مقاله معتبر بین‌المللی.',
@@ -1236,7 +1240,7 @@
             <span>${ep.icon}</span>
             <span>${isFa ? ep.title_fa : ep.title_en}</span>
           </h4>
-          <span class="badge primary" style="font-size:0.76rem;">${ep.period}</span>
+          <span class="badge primary" style="font-size:0.76rem;">${isFa ? ep.period_fa : ep.period_en}</span>
         </div>
         <p style="font-size:0.84rem; color:var(--text-muted); line-height:1.6; margin:0.25rem 0;">
           ${isFa ? ep.desc_fa : ep.desc_en}
@@ -1272,6 +1276,9 @@
     if (!container) return;
 
     const isFa = state.lang === 'fa';
+    const p1Count = isFa ? '۲' : '2';
+    const p2Count = isFa ? '۷' : '7';
+    const p3Count = isFa ? '۱۰۰٪' : '100%';
 
     container.innerHTML = `
       <div class="innovation-grid">
@@ -1279,7 +1286,7 @@
         <div class="innovation-stat-card">
           <div style="font-size:1.8rem;">📜</div>
           <div style="display:flex; justify-content:space-between; align-items:baseline;">
-            <span style="font-size:1.6rem; font-weight:800; color:var(--emerald);">۲</span>
+            <span style="font-size:1.6rem; font-weight:800; color:var(--emerald);">${p1Count}</span>
             <span class="badge emerald">TRL 7–8</span>
           </div>
           <h4 style="font-size:0.95rem; font-weight:800;">${isFa ? 'ثبت اختراع رسمی ملی' : 'National Registered Patents'}</h4>
@@ -1291,7 +1298,7 @@
         <div class="innovation-stat-card">
           <div style="font-size:1.8rem;">🏭</div>
           <div style="display:flex; justify-content:space-between; align-items:baseline;">
-            <span style="font-size:1.6rem; font-weight:800; color:var(--primary);">۷</span>
+            <span style="font-size:1.6rem; font-weight:800; color:var(--primary);">${p2Count}</span>
             <span class="badge primary">${isFa ? 'قرارداد صنعتی' : 'Industrial Contracts'}</span>
           </div>
           <h4 style="font-size:0.95rem; font-weight:800;">${isFa ? 'طرح‌های کاربردی ارتباط با صنعت' : 'Applied Industrial Research Grants'}</h4>
@@ -1303,7 +1310,7 @@
         <div class="innovation-stat-card">
           <div style="font-size:1.8rem;">💡</div>
           <div style="display:flex; justify-content:space-between; align-items:baseline;">
-            <span style="font-size:1.6rem; font-weight:800; color:var(--cyan);">۱۰۰٪</span>
+            <span style="font-size:1.6rem; font-weight:800; color:var(--cyan);">${p3Count}</span>
             <span class="badge cyan">${isFa ? 'توسعه بومی' : 'Indigenous Tech'}</span>
           </div>
           <h4 style="font-size:0.95rem; font-weight:800;">${isFa ? 'کاربردپذیری و ارزش صنعتی' : 'Commercial & Applied Utility'}</h4>
@@ -1332,6 +1339,8 @@
     const heroBio = document.getElementById('hero-bio');
     const heroQuote = document.getElementById('hero-quote');
     const heroVerified = document.getElementById('hero-verified-text');
+    const heroBadgesRow = document.getElementById('hero-badges-row');
+    const heroButtonsRow = document.getElementById('hero-buttons-row');
 
     if (heroAvatarImg) heroAvatarImg.src = profile.photo;
     if (heroTitle) heroTitle.textContent = isFa ? profile.name.fa : profile.name.en;
@@ -1347,6 +1356,38 @@
     if (heroBio) heroBio.textContent = isFa ? profile.bio.fa : profile.bio.en;
     if (heroQuote) heroQuote.textContent = isFa ? profile.personal_quote.fa : profile.personal_quote.en;
     if (heroVerified) heroVerified.textContent = t('verified_prof');
+
+    // Hero Badges (Pure English in EN, Pure Persian in FA)
+    if (heroBadgesRow) {
+      heroBadgesRow.innerHTML = isFa ? `
+        <span class="badge primary">دانشگاه رازی</span>
+        <span class="badge cyan">دانش‌آموخته دانشگاه صنعتی شریف</span>
+        <span class="badge emerald">دکتری دانشگاه ولونگونگ استرالیا</span>
+      ` : `
+        <span class="badge primary">Razi University</span>
+        <span class="badge cyan">Sharif University Alum</span>
+        <span class="badge emerald">PhD, University of Wollongong</span>
+      `;
+    }
+
+    // Hero Action Buttons
+    if (heroButtonsRow) {
+      heroButtonsRow.innerHTML = `
+        <a href="https://scholar.google.com/citations?user=C1-FBkUAAAAJ&hl=en" target="_blank" rel="noopener" class="action-pill primary" style="height:40px; padding:0 1.1rem;">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          <span>${isFa ? 'گوگل اسکولار (۱۴۰۰+ استناد)' : 'Google Scholar (1,400+ Citations)'}</span>
+        </a>
+        <a href="publications.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
+          <span>${isFa ? '📚 مشاهده مقالات' : '📚 Publications'}</span>
+        </a>
+        <a href="theses.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
+          <span>${isFa ? '🎓 پایان‌نامه‌ها' : '🎓 Supervised Theses'}</span>
+        </a>
+        <a href="contact.html" class="action-pill" style="height:40px; padding:0 1.1rem;">
+          <span>${isFa ? '✉️ تماس و ارتباط' : '✉️ Contact'}</span>
+        </a>
+      `;
+    }
 
     // Stats Grid
     const s = profile.stats;
@@ -1369,7 +1410,17 @@
       `).join('');
     }
 
-    // Core Research Pillars
+    // Core Research Pillars Headers
+    const pillarsHeadTag = document.getElementById('pillars-head-tag');
+    const pillarsHeadTitle = document.getElementById('pillars-head-title');
+    const pillarsHeadDesc = document.getElementById('pillars-head-desc');
+    const pillarsExploreBtn = document.getElementById('pillars-explore-btn');
+    if (pillarsHeadTag) pillarsHeadTag.textContent = t('home_pillars_tag');
+    if (pillarsHeadTitle) pillarsHeadTitle.textContent = t('home_pillars_title');
+    if (pillarsHeadDesc) pillarsHeadDesc.textContent = t('home_pillars_desc');
+    if (pillarsExploreBtn) pillarsExploreBtn.innerHTML = `<span>${t('explore_all_pubs')}</span>`;
+
+    // Core Research Pillars Grid
     const pillarsGrid = document.getElementById('pillars-grid');
     if (pillarsGrid) {
       const interests = window.ACADEMIC_DATA.research_interests;
@@ -1384,6 +1435,16 @@
 
     // Render Home Interactive Research Impact Analytics
     renderHomeAnalyticsShowcase();
+
+    // Featured Breakthroughs Headers
+    const featuredHeadTag = document.getElementById('featured-head-tag');
+    const featuredHeadTitle = document.getElementById('featured-head-title');
+    const featuredHeadDesc = document.getElementById('featured-head-desc');
+    const featuredExploreBtn = document.getElementById('featured-explore-btn');
+    if (featuredHeadTag) featuredHeadTag.textContent = t('home_featured_tag');
+    if (featuredHeadTitle) featuredHeadTitle.textContent = t('home_featured_title');
+    if (featuredHeadDesc) featuredHeadDesc.textContent = t('home_featured_desc');
+    if (featuredExploreBtn) featuredExploreBtn.innerHTML = `<span>${isFa ? 'مشاهده تمامی ۱۱۰+ مقاله ←' : 'Explore All 110+ Works →'}</span>`;
 
     // Recent High-Impact Breakthroughs (Selected 2024–2026 works)
     const featuredList = document.getElementById('featured-pubs-list');
@@ -1418,15 +1479,72 @@
     }
   }
 
+  function formatTimelineDate(rawStr, isFa) {
+    if (!rawStr) return '';
+    if (isFa) return rawStr;
+    return rawStr.replace(/\s*\([^)]*[\u0600-\u06FF0-9]+[^)]*\)/g, '').trim();
+  }
+
   // 2. Publications Page Renderer
   function renderPublicationsPage() {
-    renderSubpageBanner('pubs_page_title', 'pubs_page_subtitle', state.lang === 'fa' ? 'مقالات و پژوهش‌ها' : 'Publications');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('pubs_page_title', 'pubs_page_subtitle', isFa ? 'مقالات و پژوهش‌ها' : 'Publications');
 
     // Render the Advanced Interactive Chart Suite
     renderInteractiveChartSuite();
 
+    // Populate Search input placeholder and value
+    const searchInput = document.getElementById('pub-search-input');
+    if (searchInput) {
+      searchInput.placeholder = t('search_placeholder');
+      searchInput.value = state.pubSearch;
+    }
+
+    // Populate Category Filter Pills dynamically
+    const filterPills = document.getElementById('pub-filter-pills');
+    if (filterPills) {
+      filterPills.innerHTML = `
+        <button class="filter-pill ${state.pubCategory === 'all' ? 'active' : ''}" onclick="window.setPubFilter('all')">${t('filter_all')}</button>
+        <button class="filter-pill ${state.pubCategory === 'journal' ? 'active' : ''}" onclick="window.setPubFilter('journal')">${t('filter_journals')}</button>
+        <button class="filter-pill ${state.pubCategory === 'conference' ? 'active' : ''}" onclick="window.setPubFilter('conference')">${t('filter_conferences')}</button>
+        <button class="filter-pill ${state.pubCategory === 'highlight' ? 'active' : ''}" onclick="window.setPubFilter('highlight')">${t('filter_highlights')}</button>
+      `;
+    }
+
+    // Populate Topic Filter Select dynamically
+    const topicSelect = document.getElementById('topic-filter-select');
+    if (topicSelect) {
+      const topics = [
+        { value: 'all', label_en: 'All Research Topics', label_fa: 'همه حوزه‌های پژوهشی' },
+        { value: 'medical_imaging', label_en: 'Medical Imaging & Healthcare', label_fa: 'هوش مصنوعی و تصاویر پزشکی' },
+        { value: 'ai_deeplearning', label_en: 'AI & Deep Learning Architectures', label_fa: 'معماری‌های یادگیری عمیق و بینایی' },
+        { value: 'nlp_sentiment', label_en: 'NLP & Sentiment Analysis', label_fa: 'پردازش زبان طبیعی و تحلیل متن' },
+        { value: 'distributed_fog', label_en: 'Distributed & Cloud-Fog Systems', label_fa: 'سیستم‌های توزیع‌شده و محاسبات مه' },
+        { value: 'biometrics_vision', label_en: 'Biometrics & Pattern Recognition', label_fa: 'بیومتریک و بازشناسی الگو' },
+        { value: 'optimization', label_en: 'Meta-heuristic Optimization', label_fa: 'بهینه‌سازی هوشمند و فراابتکاری' }
+      ];
+      topicSelect.innerHTML = topics.map(tp => `
+        <option value="${tp.value}" ${state.pubTopic === tp.value ? 'selected' : ''}>${isFa ? tp.label_fa : tp.label_en}</option>
+      `).join('');
+    }
+
+    // Populate Sort Select dynamically
+    const sortSelect = document.getElementById('pub-sort-select');
+    if (sortSelect) {
+      sortSelect.innerHTML = `
+        <option value="newest" ${state.pubSort === 'newest' ? 'selected' : ''}>${t('sort_newest')}</option>
+        <option value="oldest" ${state.pubSort === 'oldest' ? 'selected' : ''}>${t('sort_oldest')}</option>
+        <option value="title" ${state.pubSort === 'title' ? 'selected' : ''}>${t('sort_title')}</option>
+      `;
+    }
+
+    // Modal Close Button & Title
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    if (modalCloseBtn) modalCloseBtn.textContent = t('modal_close');
+    const modalBibtexTitle = document.getElementById('modal-bibtex-title');
+    if (modalBibtexTitle) modalBibtexTitle.textContent = isFa ? 'ارجاع BibTeX' : 'BibTeX Citation';
+
     const rawList = window.ACADEMIC_DATA.publications;
-    const isFa = state.lang === 'fa';
     const container = document.getElementById('publications-feed');
     if (!container) return;
 
@@ -1514,11 +1632,36 @@
 
   // 3. Theses Page Renderer
   function renderThesesPage() {
-    renderSubpageBanner('theses_page_title', 'theses_page_subtitle', state.lang === 'fa' ? 'پایان‌نامه‌ها' : 'Theses');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('theses_page_title', 'theses_page_subtitle', isFa ? 'پایان‌نامه‌ها' : 'Theses');
     renderThesesAnalytics();
 
+    // Populate Search input placeholder and value
+    const thSearch = document.getElementById('thesis-search-input');
+    if (thSearch) {
+      thSearch.placeholder = t('theses_search_placeholder');
+      thSearch.value = state.thesisSearch;
+    }
+
+    // Populate Year Filter Pills dynamically
+    const yearPills = document.getElementById('theses-year-pills');
+    if (yearPills) {
+      const years = [
+        { val: 'all', fa: 'همه سال‌ها', en: 'All Years' },
+        { val: '2026', fa: '2026 (۱۴۰۴-۱۴۰۵)', en: '2026 (Latest Cohort)' },
+        { val: '2025', fa: '2025 (۱۴۰۳-۱۴۰۴)', en: '2025' },
+        { val: '2024', fa: '2024 (۱۴۰۲-۱۴۰۳)', en: '2024' },
+        { val: '2023', fa: '2023 (۱۴۰۱-۱۴۰۲)', en: '2023' },
+        { val: 'older', fa: 'ماقبل ۲۰۲۳', en: 'Before 2023' }
+      ];
+      yearPills.innerHTML = years.map(y => `
+        <button class="filter-pill ${state.thesisYear === y.val ? 'active' : ''}" onclick="window.setThesisYear('${y.val}')">
+          ${isFa ? y.fa : y.en}
+        </button>
+      `).join('');
+    }
+
     const rawList = window.ACADEMIC_DATA.theses;
-    const isFa = state.lang === 'fa';
     const container = document.getElementById('theses-grid');
     if (!container) return;
 
@@ -1563,12 +1706,12 @@
 
   // 4. Experience & Timeline Page Renderer
   function renderExperiencePage() {
-    renderSubpageBanner('exp_page_title', 'exp_page_subtitle', state.lang === 'fa' ? 'سوابق علمی' : 'Experience');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('exp_page_title', 'exp_page_subtitle', isFa ? 'سوابق علمی' : 'Experience');
     renderExperienceAnalytics();
 
     const eduList = window.ACADEMIC_DATA.education;
     const ldrList = window.ACADEMIC_DATA.leadership;
-    const isFa = state.lang === 'fa';
     const container = document.getElementById('timeline-nodes');
     if (!container) return;
 
@@ -1581,7 +1724,7 @@
       const title = item.isLeadership ? (isFa ? item.role_fa : item.role_en) : (isFa ? item.degree_fa : item.degree_en);
       const inst = isFa ? item.institution_fa : item.institution_en;
       const desc = item.isLeadership ? (isFa ? item.desc_fa : item.desc_en) : (isFa ? item.details_fa : item.details_en);
-      const date = item.period || item.year;
+      const date = formatTimelineDate(item.period || item.year, isFa);
 
       return `
         <div class="timeline-node">
@@ -1599,10 +1742,10 @@
 
   // 5. Teaching & Courses Page Renderer
   function renderTeachingPage() {
-    renderSubpageBanner('teaching_page_title', 'teaching_page_subtitle', state.lang === 'fa' ? 'دروس و آموزش' : 'Teaching');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('teaching_page_title', 'teaching_page_subtitle', isFa ? 'دروس و آموزش' : 'Teaching');
 
     const courses = window.ACADEMIC_DATA.courses;
-    const isFa = state.lang === 'fa';
     const grid = document.getElementById('courses-grid');
     if (!grid) return;
 
@@ -1620,12 +1763,12 @@
 
   // 6. Patents & Projects Page Renderer
   function renderProjectsPage() {
-    renderSubpageBanner('projects_page_title', 'projects_page_subtitle', state.lang === 'fa' ? 'اختراعات و پروژه‌ها' : 'Patents');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('projects_page_title', 'projects_page_subtitle', isFa ? 'اختراعات و پروژه‌ها' : 'Patents');
     renderProjectsAnalytics();
 
     const patents = window.ACADEMIC_DATA.patents;
     const projects = window.ACADEMIC_DATA.applied_projects;
-    const isFa = state.lang === 'fa';
     const grid = document.getElementById('projects-grid');
     if (!grid) return;
 
@@ -1656,21 +1799,35 @@
 
   // 7. Contact Page Renderer
   function renderContactPage() {
-    renderSubpageBanner('contact_page_title', 'contact_page_subtitle', state.lang === 'fa' ? 'تماس با استاد' : 'Contact');
+    const isFa = state.lang === 'fa';
+    renderSubpageBanner('contact_page_title', 'contact_page_subtitle', isFa ? 'تماس با استاد' : 'Contact');
 
     const prof = window.ACADEMIC_DATA.profile;
-    const isFa = state.lang === 'fa';
 
+    const officeTitle = document.getElementById('contact-office-title');
     const officeText = document.getElementById('contact-office-text');
+    const emailTitle = document.getElementById('contact-email-title');
     const emailLink = document.getElementById('contact-email-link');
+    const phoneTitle = document.getElementById('contact-phone-title');
     const phoneText = document.getElementById('contact-phone-text');
+    const campusTitle = document.getElementById('contact-campus-title');
+    const campusDesc = document.getElementById('contact-campus-desc');
+    const campusPortalLink = document.getElementById('contact-campus-portal-link');
 
+    if (officeTitle) officeTitle.textContent = t('office_title');
     if (officeText) officeText.textContent = isFa ? prof.office.fa : prof.office.en;
+    if (emailTitle) emailTitle.textContent = t('email_title');
     if (emailLink) {
       emailLink.href = `mailto:${prof.email}`;
       emailLink.textContent = prof.email;
     }
+    if (phoneTitle) phoneTitle.textContent = t('phone_title');
     if (phoneText) phoneText.textContent = prof.phone;
+    if (campusTitle) campusTitle.textContent = isFa ? 'دانشگاه رازی · دانشکده مهندسی' : 'Razi University · Faculty of Engineering';
+    if (campusDesc) campusDesc.textContent = isFa 
+      ? 'دانشکده فنی و مهندسی، گروه مهندسی کامپیوتر و فناوری اطلاعات، طاق بستان، کرمانشاه، ایران'
+      : 'Faculty of Engineering, Department of Computer Engineering & IT, Taq-e Bostan, Kermanshah, Iran';
+    if (campusPortalLink) campusPortalLink.textContent = isFa ? 'پرتال دانشگاه رازی ↗' : 'Razi University Portal ↗';
   }
 
   // --- Master Render Function ---
@@ -1697,15 +1854,6 @@
 
   // --- Setup Page Listeners ---
   function setupListeners() {
-    document.querySelectorAll('[data-pub-filter]').forEach(btn => {
-      btn.onclick = () => {
-        document.querySelectorAll('[data-pub-filter]').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        state.pubCategory = btn.getAttribute('data-pub-filter');
-        renderPublicationsPage();
-      };
-    });
-
     const topicSelect = document.getElementById('topic-filter-select');
     if (topicSelect) {
       topicSelect.onchange = (e) => {
@@ -1730,15 +1878,6 @@
       };
     }
 
-    document.querySelectorAll('[data-thesis-year]').forEach(btn => {
-      btn.onclick = () => {
-        document.querySelectorAll('[data-thesis-year]').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        state.thesisYear = btn.getAttribute('data-thesis-year');
-        renderThesesPage();
-      };
-    });
-
     const thesisSearchInput = document.getElementById('thesis-search-input');
     if (thesisSearchInput) {
       thesisSearchInput.oninput = (e) => {
@@ -1749,6 +1888,16 @@
   }
 
   // --- Global Window API ---
+  window.setPubFilter = function (cat) {
+    state.pubCategory = cat;
+    renderPublicationsPage();
+  };
+
+  window.setThesisYear = function (yr) {
+    state.thesisYear = yr;
+    renderThesesPage();
+  };
+
   window.toggleLanguage = function () {
     state.lang = state.lang === 'fa' ? 'en' : 'fa';
     localStorage.setItem('chalechale_lang', state.lang);
@@ -1802,13 +1951,20 @@
     const abstractEl = document.getElementById('modal-abstract');
     const bibtexEl = document.getElementById('modal-bibtex');
     const doiBtn = document.getElementById('modal-doi-link');
+    const modalBadge = document.getElementById('modal-badge');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
 
+    if (modalBadge) {
+      modalBadge.textContent = pub.category === 'journal' ? (isFa ? 'مقاله ژورنال' : 'Journal Article') : (isFa ? 'کنفرانس' : 'Conference Paper');
+    }
+    if (modalCloseBtn) modalCloseBtn.textContent = t('modal_close');
     if (titleEl) titleEl.textContent = isFa ? (pub.title_fa || pub.title_en) : (pub.title_en || pub.title_fa);
     if (authorsEl) authorsEl.textContent = pub.authors;
     if (venueEl) venueEl.textContent = `${pub.journal_en || pub.conference_en || ''} (${pub.year})`;
     if (abstractEl) abstractEl.textContent = isFa ? (pub.abstract_fa || pub.abstract_en || 'بدون چکیده.') : (pub.abstract_en || pub.abstract_fa || 'No abstract available.');
     if (bibtexEl) bibtexEl.textContent = formatBibTeX(pub);
     if (doiBtn) {
+      doiBtn.textContent = isFa ? 'مشاهده در ناشر / DOI ↗' : 'View DOI / Publisher ↗';
       if (pub.doi) {
         doiBtn.href = `https://doi.org/${pub.doi}`;
         doiBtn.style.display = 'inline-flex';

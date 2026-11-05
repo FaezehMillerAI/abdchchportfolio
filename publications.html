@@ -38,22 +38,16 @@
         </div>
 
         <div class="filter-pills-wrap">
-          <div class="pills-group">
+          <div id="pub-filter-pills" class="pills-group">
             <button class="filter-pill active" data-pub-filter="all">همه مقالات</button>
-            <button class="filter-pill" data-pub-filter="journal">مجلات علمی (Journals)</button>
-            <button class="filter-pill" data-pub-filter="conference">کنفرانس‌ها (Conferences)</button>
+            <button class="filter-pill" data-pub-filter="journal">مجلات علمی</button>
+            <button class="filter-pill" data-pub-filter="conference">کنفرانس‌ها</button>
             <button class="filter-pill" data-pub-filter="highlight">مقالات برگزیده (Q1)</button>
           </div>
 
           <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
             <select id="topic-filter-select" class="select-dropdown">
               <option value="all">همه حوزه‌های پژوهشی</option>
-              <option value="medical_imaging">Medical Imaging & Healthcare</option>
-              <option value="ai_deeplearning">AI & Deep Learning Architectures</option>
-              <option value="nlp_sentiment">NLP & Sentiment Analysis</option>
-              <option value="distributed_fog">Distributed & Cloud-Fog Systems</option>
-              <option value="biometrics_vision">Biometrics & Pattern Recognition</option>
-              <option value="optimization">Meta-heuristic Optimization</option>
             </select>
 
             <select id="pub-sort-select" class="select-dropdown">
@@ -83,12 +77,12 @@
       <div id="modal-venue" style="font-size:0.86rem; font-style:italic; color:var(--text-muted);"></div>
       <div id="modal-abstract" class="pub-abstract-box" style="margin:0;"></div>
       <div>
-        <h4 style="font-size:0.82rem; font-weight:700; margin-bottom:0.35rem; color:var(--text-faint);">BibTeX Citation</h4>
+        <h4 id="modal-bibtex-title" style="font-size:0.82rem; font-weight:700; margin-bottom:0.35rem; color:var(--text-faint);">BibTeX Citation</h4>
         <pre id="modal-bibtex" class="bibtex-code"></pre>
       </div>
       <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
         <a id="modal-doi-link" href="#" target="_blank" rel="noopener" class="btn-sm" style="color:var(--primary); border-color:var(--primary);">View DOI / Publisher ↗</a>
-        <button class="btn-sm" onclick="window.closePubModal()">بستن</button>
+        <button id="modal-close-btn" class="btn-sm" onclick="window.closePubModal()">بستن</button>
       </div>
     </div>
   </div>
