@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقالات و پژوهش‌ها | دکتر عبدالله چاله چاله</title>
+  
+  <meta name="description" content="Peer-reviewed publications, journal articles, and international conference papers by Dr. Abdolah Chalechale.">
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="publications">
+
+  <!-- Shared Dynamic Header -->
+  <header id="app-header"></header>
+
+  <!-- Subpage Header Banner -->
+  <div id="subpage-banner"></div>
+
+  <!-- Interactive Multi-Chart Analytics Suite (Tabs: Publications, Citations, Venues, Radar, Collaborations) -->
+  <section class="section" style="padding-top:25px; padding-bottom:15px;">
+    <div class="container">
+      <div id="analytics-suite-container">
+        <!-- Rendered by app.js: 5 interactive charts with tabs & live metric sidebar -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Hub Main Feed -->
+  <section class="section" style="padding-top:10px;">
+    <div class="container">
+      
+      <!-- Filter Toolbar -->
+      <div class="filter-toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="pub-search-input" class="search-field" placeholder="جستجو در عنوان، نام نویسنده، مجله یا سال انتشار (مثلاً: 'پانکراس', 'فدرال', 'DenseNet')...">
+        </div>
+
+        <div class="filter-pills-wrap">
+          <div class="pills-group">
+            <button class="filter-pill active" data-pub-filter="all">همه مقالات</button>
+            <button class="filter-pill" data-pub-filter="journal">مجلات علمی (Journals)</button>
+            <button class="filter-pill" data-pub-filter="conference">کنفرانس‌ها (Conferences)</button>
+            <button class="filter-pill" data-pub-filter="highlight">مقالات برگزیده (Q1)</button>
+          </div>
+
+          <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+            <select id="topic-filter-select" class="select-dropdown">
+              <option value="all">همه حوزه‌های پژوهشی</option>
+              <option value="medical_imaging">Medical Imaging & Healthcare</option>
+              <option value="ai_deeplearning">AI & Deep Learning Architectures</option>
+              <option value="nlp_sentiment">NLP & Sentiment Analysis</option>
+              <option value="distributed_fog">Distributed & Cloud-Fog Systems</option>
+              <option value="biometrics_vision">Biometrics & Pattern Recognition</option>
+              <option value="optimization">Meta-heuristic Optimization</option>
+            </select>
+
+            <select id="pub-sort-select" class="select-dropdown">
+              <option value="newest">مرتب‌سازی: جدیدترین</option>
+              <option value="oldest">مرتب‌سازی: قدیمی‌ترین</option>
+              <option value="title">مرتب‌سازی: الفبایی</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feed Container -->
+      <div id="publications-feed" class="publications-feed">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Publication Details Modal -->
+  <div id="pub-modal-overlay" class="modal-overlay">
+    <div class="modal-window">
+      <div class="modal-head">
+        <h3 id="modal-title" style="font-size:1.25rem; font-weight:800; line-height:1.4;"></h3>
+        <button class="modal-close" onclick="window.closePubModal()">✕</button>
+      </div>
+      <div id="modal-authors" style="font-size:0.92rem; color:var(--primary); font-weight:600;"></div>
+      <div id="modal-venue" style="font-size:0.86rem; font-style:italic; color:var(--text-muted);"></div>
+      <div id="modal-abstract" class="pub-abstract-box" style="margin:0;"></div>
+      <div>
+        <h4 style="font-size:0.82rem; font-weight:700; margin-bottom:0.35rem; color:var(--text-faint);">BibTeX Citation</h4>
+        <pre id="modal-bibtex" class="bibtex-code"></pre>
+      </div>
+      <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+        <a id="modal-doi-link" href="#" target="_blank" rel="noopener" class="btn-sm" style="color:var(--primary); border-color:var(--primary);">View DOI / Publisher ↗</a>
+        <button class="btn-sm" onclick="window.closePubModal()">بستن</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Dynamic Footer -->
+  <footer id="app-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

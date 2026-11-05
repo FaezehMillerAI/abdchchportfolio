@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پایان‌نامه‌ها و دانش‌آموختگان | دکتر عبدالله چاله چاله</title>
+  
+  <meta name="description" content="Supervised Master's and Ph.D. theses guided by Dr. Abdolah Chalechale at Razi University.">
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="theses">
+
+  <!-- Shared Dynamic Header -->
+  <header id="app-header"></header>
+
+  <!-- Subpage Header Banner -->
+  <div id="subpage-banner"></div>
+
+  <!-- Interactive Theses & Mentorship Analytics Deck -->
+  <section class="section" style="padding-top:25px; padding-bottom:15px;">
+    <div class="container">
+      <div id="theses-analytics-container">
+        <!-- Rendered by app.js: Thematic Distribution & Graduation Cohort Chart -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Theses Directory -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filter Toolbar -->
+      <div class="filter-toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="thesis-search-input" class="search-field" placeholder="جستجو در نام دانشجو، عنوان پایان‌نامه یا موضوع (مثلاً: 'صفری', 'پانکراس', 'کبد')...">
+        </div>
+
+        <div class="filter-pills-wrap">
+          <div class="pills-group">
+            <button class="filter-pill active" data-thesis-year="all">همه سال‌ها</button>
+            <button class="filter-pill" data-thesis-year="2026">2026 (۱۴۰۴-۱۴۰۵)</button>
+            <button class="filter-pill" data-thesis-year="2025">2025 (۱۴۰۳-۱۴۰۴)</button>
+            <button class="filter-pill" data-thesis-year="2024">2024 (۱۴۰۲-۱۴۰۳)</button>
+            <button class="filter-pill" data-thesis-year="2023">2023 (۱۴۰۱-۱۴۰۲)</button>
+            <button class="filter-pill" data-thesis-year="older">ماقبل ۲۰۲۳</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theses Grid -->
+      <div id="theses-grid" class="theses-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Dynamic Footer -->
+  <footer id="app-footer"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
