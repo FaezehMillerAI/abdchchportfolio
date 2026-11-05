@@ -27,7 +27,6 @@ window.ACADEMIC_DATA = {
     },
     "photo": "assets/images/profile.jpg",
     "email": "chalechale@razi.ac.ir",
-    "alt_email": "a.chalechale@gmail.com",
     "phone": "+98 (83) 34343235",
     "office": {
       "en": "Faculty of Engineering, Razi University, Taq-e Bostan, Kermanshah, Iran",

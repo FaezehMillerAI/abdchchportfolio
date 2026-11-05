@@ -129,7 +129,7 @@ Resume/
 - **Institution:** Faculty of Engineering, Razi University, Kermanshah, Iran
 - **Alma Mater:** University of Wollongong (Ph.D., 2005), Sharif University of Technology (B.Sc., 1991; M.Sc., 1994)
 - **Citations:** 1,412+ | **h-index:** 18 | **i10-index:** 31
-- **Email:** `chalechale@razi.ac.ir` | `a.chalechale@gmail.com`
+- **Email:** `chalechale@razi.ac.ir`
 - **Profiles:** [Google Scholar](https://scholar.google.com/citations?user=C1-FBkUAAAAJ&hl=en) · [Razi University (EN)](https://en.razi.ac.ir/~chalechale/home) · [Razi University (FA)](https://razi.ac.ir/~chalechale)
 
 ---
